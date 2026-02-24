@@ -10,7 +10,7 @@ export default function Hero() {
         <section className="relative w-full min-h-[90vh] flex flex-col lg:flex-row items-center justify-between px-6 py-12 lg:px-16 lg:py-0 overflow-hidden bg-[#050510]">
             {/* Desktop Background Image */}
             <div className="hidden lg:block absolute inset-0 z-0 pointer-events-none">
-                <div className="absolute inset-0 bg-[url('/images/hero-desktop-bg.jpg')] bg-cover bg-center bg-no-repeat opacity-30"></div>
+                <div className="absolute inset-0 bg-[url('/images/hero-desktop-bg.jpg.jpeg')] bg-cover bg-center bg-no-repeat opacity-30"></div>
                 {/* Gradient to fade from solid dark on the left/bottom to transparent on the right */}
                 <div className="absolute inset-0 bg-gradient-to-r from-[#050510] via-[#050510]/80 to-transparent"></div>
                 <div className="absolute inset-0 bg-gradient-to-t from-[#050510] via-transparent to-[#050510]/50"></div>
