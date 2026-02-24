@@ -8,9 +8,16 @@ export default function Hero() {
 
     return (
         <section className="relative w-full min-h-[90vh] flex flex-col lg:flex-row items-center justify-between px-6 py-12 lg:px-16 lg:py-0 overflow-hidden bg-[#050510]">
+            {/* Desktop Background Image */}
+            <div className="hidden lg:block absolute inset-0 z-0 pointer-events-none">
+                <div className="absolute inset-0 bg-[url('/images/hero-desktop-bg.jpg')] bg-cover bg-center bg-no-repeat opacity-30"></div>
+                {/* Gradient to fade from solid dark on the left/bottom to transparent on the right */}
+                <div className="absolute inset-0 bg-gradient-to-r from-[#050510] via-[#050510]/80 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#050510] via-transparent to-[#050510]/50"></div>
+            </div>
 
             {/* Content Side */}
-            <div className="flex-1 w-full max-w-2xl z-10 space-y-8 lg:pr-12 mt-32 lg:mt-24 flex flex-col items-center text-center lg:items-start lg:text-left">
+            <div className="relative flex-1 w-full max-w-2xl z-10 space-y-8 lg:pr-12 mt-32 lg:mt-24 flex flex-col items-center text-center lg:items-start lg:text-left">
 
                 {/* Badge removed and moved to App.tsx as a floating element */}
                 <h1 className="text-5xl lg:text-7xl font-bold tracking-tighter text-white leading-[1.05]">
