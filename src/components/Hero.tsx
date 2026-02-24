@@ -1,4 +1,3 @@
-import SplineScene from './SplineScene';
 import { ShimmerButton } from './ui/shimmer-button';
 import { useLanguage } from '../context/LanguageContext';
 import ShiftingCountdown from './ui/countdown-timer';
@@ -68,15 +67,6 @@ export default function Hero() {
                 <div className="w-full pt-8 lg:pt-12">
                     <ShiftingCountdown labels={t("hero.countdown") as any} />
                 </div>
-            </div>
-
-            {/* 3D Scene Side */}
-            <div className="flex-1 w-full h-[50vh] lg:h-screen relative mt-12 lg:mt-0 z-0 opacity-90" style={{ mixBlendMode: 'screen', WebkitMaskImage: 'radial-gradient(circle, black 50%, transparent 70%)', maskImage: 'radial-gradient(circle, black 50%, transparent 70%)' }}>
-                <SplineScene
-                    scene="https://prod.spline.design/YT3tDxFSnngDp0di/scene.splinecode"
-                    className="w-full h-full object-cover"
-                    style={{ filter: "invert(1) hue-rotate(290deg) saturate(1.5) contrast(1.2) brightness(0.9)" }}
-                />
             </div>
 
         </section>
