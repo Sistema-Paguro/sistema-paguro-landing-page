@@ -28,7 +28,7 @@ export default function Benefits() {
         <section className="py-24 bg-white relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-6">
 
-                <div className="mb-16 max-w-2xl">
+                <div className="mb-16 max-w-2xl mx-auto text-center">
                     <h2 className="text-4xl lg:text-5xl font-bold text-black mb-6">
                         {t("benefits.titleLine1")} <br />
                         <span className="text-blue">{t("benefits.titleLine2")}</span>
