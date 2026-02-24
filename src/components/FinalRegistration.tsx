@@ -80,7 +80,7 @@ export default function FinalRegistration() {
                                             type="text"
                                             name="nombre"
                                             required
-                                            className="w-full mt-2 px-4 py-3 text-white bg-white/5 outline-none border border-white/10 focus:border-magenta shadow-sm rounded-xl transition-all placeholder:text-zinc-500"
+                                            className="w-full mt-2 px-4 py-3 text-white bg-white/5 outline-none border border-white/10 focus:border-magenta shadow-sm rounded-xl transition-all placeholder:text-zinc-400"
                                             placeholder={t("registration.form.firstNamePh")}
                                         />
                                     </div>
@@ -92,7 +92,7 @@ export default function FinalRegistration() {
                                             type="text"
                                             name="apellido"
                                             required
-                                            className="w-full mt-2 px-4 py-3 text-white bg-white/5 outline-none border border-white/10 focus:border-magenta shadow-sm rounded-xl transition-all placeholder:text-zinc-500"
+                                            className="w-full mt-2 px-4 py-3 text-white bg-white/5 outline-none border border-white/10 focus:border-magenta shadow-sm rounded-xl transition-all placeholder:text-zinc-400"
                                             placeholder={t("registration.form.lastNamePh")}
                                         />
                                     </div>
@@ -106,7 +106,7 @@ export default function FinalRegistration() {
                                         type="email"
                                         name="email"
                                         required
-                                        className="w-full mt-2 px-4 py-3 text-white bg-white/5 outline-none border border-white/10 focus:border-magenta shadow-sm rounded-xl transition-all placeholder:text-zinc-500"
+                                        className="w-full mt-2 px-4 py-3 text-white bg-white/5 outline-none border border-white/10 focus:border-magenta shadow-sm rounded-xl transition-all placeholder:text-zinc-400"
                                         placeholder={t("registration.form.emailPh")}
                                     />
                                 </div>

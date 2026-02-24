@@ -121,7 +121,7 @@ export function PhoneInput({ className, defaultCountryCode = 'CO', onPhoneChange
                     value={phoneNumber}
                     onChange={handlePhoneChange}
                     placeholder="(300) 000-0000"
-                    className="flex-1 bg-transparent border-none text-white px-3 py-2 outline-none placeholder:text-gray-600 font-medium tracking-wide w-full min-w-0"
+                    className="flex-1 bg-transparent border-none text-white px-3 py-2 outline-none placeholder:text-zinc-400 font-medium tracking-wide w-full min-w-0"
                 />
             </div>
 
@@ -139,7 +139,7 @@ export function PhoneInput({ className, defaultCountryCode = 'CO', onPhoneChange
                                 value={search}
                                 onChange={(e) => setSearch(e.target.value)}
                                 placeholder="Search country..."
-                                className="w-full bg-[#151923] border border-white/5 rounded-lg py-2 pl-9 pr-3 text-sm text-white placeholder:text-gray-500 outline-none focus:border-cyan-500/50 transition-colors"
+                                className="w-full bg-[#151923] border border-white/5 rounded-lg py-2 pl-9 pr-3 text-sm text-white placeholder:text-zinc-400 outline-none focus:border-cyan-500/50 transition-colors"
                                 autoFocus
                             />
                         </div>
