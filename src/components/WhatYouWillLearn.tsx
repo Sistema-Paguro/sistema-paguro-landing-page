@@ -1,10 +1,12 @@
 import { useLanguage } from "../context/LanguageContext";
 import { ShimmerButton } from "./ui/shimmer-button";
+import { Target, Zap, Globe, FileCheck } from "lucide-react";
 
 export default function WhatYouWillLearn() {
     const { t } = useLanguage();
 
     const cards = t("learn.cards") as Array<{ title: string; desc: string }>;
+    const cardIcons = [Target, Zap, Globe, FileCheck];
 
     return (
         <section className="py-24 bg-[#050510] relative overflow-hidden">
@@ -36,8 +38,16 @@ export default function WhatYouWillLearn() {
                             <div className="absolute inset-0 bg-gradient-to-br from-magenta/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
                             <div className="relative z-10">
-                                <div className="text-magenta font-bold text-5xl mb-6 opacity-30 group-hover:opacity-100 transition-opacity duration-500">
-                                    0{index + 1}
+                                <div className="flex items-center justify-between mb-6">
+                                    <div className="text-magenta font-bold text-5xl opacity-30 group-hover:opacity-100 transition-opacity duration-500">
+                                        0{index + 1}
+                                    </div>
+                                    <div className="text-magenta/50 group-hover:text-magenta transition-colors duration-500">
+                                        {(() => {
+                                            const Icon = cardIcons[index];
+                                            return Icon ? <Icon className="w-10 h-10" /> : null;
+                                        })()}
+                                    </div>
                                 </div>
                                 <h3 className="text-2xl font-bold text-white mb-4">
                                     {card.title}
