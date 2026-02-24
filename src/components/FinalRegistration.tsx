@@ -43,7 +43,7 @@ export default function FinalRegistration() {
         <section className="py-24 bg-black text-white text-center">
             <div className="max-w-4xl mx-auto px-6">
 
-                <h2 className="text-4xl lg:text-6xl font-bold mb-6 tracking-tight">
+                <h2 className="text-4xl lg:text-6xl font-bold mb-6 tracking-tight text-white">
                     {t("registration.title")}
                 </h2>
 
