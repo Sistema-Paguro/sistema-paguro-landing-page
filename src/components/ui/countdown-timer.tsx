@@ -54,9 +54,9 @@ export default function ShiftingCountdown({ labels }: ShiftingCountdownProps) {
     const COUNTDOWN_FROM = useMemo(() => getNextSunday7PMEST(), []);
 
     return (
-        <div className="w-full flex flex-col items-center justify-start bg-transparent transition-colors duration-500 py-4 gap-3">
+        <div className="w-full flex flex-col items-end justify-start bg-transparent transition-colors duration-500 py-4 gap-3">
             {labels.title && (
-                <span className="text-gray-400 font-semibold text-sm md:text-base tracking-[0.2em] uppercase text-left w-full max-w-lg px-2">
+                <span className="text-gray-400 font-semibold text-sm md:text-base tracking-[0.2em] uppercase text-right w-full max-w-lg px-2">
                     {labels.title}
                 </span>
             )}
