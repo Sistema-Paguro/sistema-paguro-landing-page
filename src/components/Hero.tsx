@@ -64,7 +64,7 @@ export default function Hero() {
                 </div>
 
                 {/* Live Event Countdown */}
-                <div className="w-full pt-8 lg:pt-12">
+                <div className="w-full pt-8 lg:pt-12 flex justify-end lg:justify-end">
                     <ShiftingCountdown labels={t("hero.countdown") as any} />
                 </div>
             </div>
