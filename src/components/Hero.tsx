@@ -6,7 +6,7 @@ export default function Hero() {
     const { t } = useLanguage();
 
     return (
-        <section className="relative w-full min-h-[90vh] flex flex-col lg:flex-row items-center justify-between px-6 py-12 lg:px-16 lg:py-0 overflow-hidden bg-[#050510]">
+        <section className="relative w-full min-h-[90vh] flex flex-col lg:flex-row px-6 py-12 lg:px-16 lg:py-24 overflow-hidden bg-[#050510]">
             {/* Desktop Background Image */}
             <div className="hidden lg:block absolute inset-0 z-0 pointer-events-none">
                 <div className="absolute inset-0 bg-[url('/images/hero-desktop-bg.jpg')] bg-cover bg-[position:85%_center] bg-no-repeat opacity-75"></div>
@@ -16,7 +16,7 @@ export default function Hero() {
             </div>
 
             {/* Content Side */}
-            <div className="relative flex-1 w-full max-w-2xl z-10 space-y-8 lg:pr-12 mt-32 lg:mt-24 flex flex-col items-center text-center lg:items-start lg:text-left">
+            <div className="relative flex-1 w-full max-w-2xl z-10 space-y-8 lg:pr-12 flex flex-col justify-center items-center text-center lg:items-start lg:text-left mt-16 md:mt-20 lg:mt-0">
 
                 {/* Badge removed and moved to App.tsx as a floating element */}
                 <h1 className="text-5xl lg:text-7xl font-bold tracking-tighter text-white leading-[1.05]">
@@ -65,7 +65,7 @@ export default function Hero() {
             </div>
 
             {/* Live Event Countdown */}
-            <div className="relative z-10 w-full lg:w-auto mt-12 lg:mt-0 flex justify-center lg:justify-end">
+            <div className="relative z-10 w-full lg:w-auto mt-12 lg:mt-0 flex flex-col justify-end items-center lg:items-end">
                 <ShiftingCountdown labels={t("hero.countdown") as any} />
             </div>
 
