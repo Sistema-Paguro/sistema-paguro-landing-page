@@ -35,7 +35,7 @@ export default function Benefits() {
                     </h2>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {benefits.map((b, i) => (
                         <div key={i} className="group flex flex-col rounded-2xl bg-white border border-zinc-200 shadow-sm hover:shadow-xl hover:border-blue/20 hover:-translate-y-2 transition-all duration-500 overflow-hidden">
                             <div className="w-full h-48 sm:h-56 relative overflow-hidden bg-zinc-100">

@@ -28,14 +28,14 @@ export default function Testimonials() {
                     </h2>
 
                     {/* Demo Component Integration */}
-                    <div className="flex items-center divide-x divide-gray-700 bg-white/5 p-4 rounded-2xl backdrop-blur-sm border border-white/10">
-                        <div className="flex -space-x-3 pr-6">
+                    <div className="flex flex-wrap items-center justify-center sm:divide-x divide-gray-700 bg-white/5 p-4 sm:px-6 rounded-2xl backdrop-blur-sm border border-white/10 gap-4 sm:gap-0">
+                        <div className="flex -space-x-3 sm:pr-6 justify-center w-full sm:w-auto">
                             <img src="/testimonials/avatar_1.png" alt="Avatar" className="w-12 h-12 rounded-full border-2 border-[#050510] hover:-translate-y-1 transition z-10 object-cover" />
                             <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&h=200&fit=crop&crop=faces" alt="Avatar" className="w-12 h-12 rounded-full border-2 border-[#050510] hover:-translate-y-1 transition z-20 object-cover filter grayscale" />
                             <img src="/testimonials/avatar_3.png" alt="Avatar" className="w-12 h-12 rounded-full border-2 border-[#050510] hover:-translate-y-1 transition z-30 object-cover" />
                             <img src="/testimonials/avatar_4.png" alt="Avatar" className="w-12 h-12 rounded-full border-2 border-[#050510] hover:-translate-y-1 transition z-40 object-cover" />
                         </div>
-                        <div className="pl-6 text-left">
+                        <div className="sm:pl-6 text-center sm:text-left flex flex-col items-center sm:items-start w-full sm:w-auto">
                             <div className="flex items-center mb-1">
                                 {[...Array(5)].map((_, i) => (
                                     <svg key={i} xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="#FACC15" stroke="#FACC15" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

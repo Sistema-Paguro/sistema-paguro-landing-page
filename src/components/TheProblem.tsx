@@ -27,7 +27,7 @@ export default function TheProblem() {
                     </h2>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
                     {problems.map((p, i) => (
                         <div key={i} className="group p-8 flex flex-col rounded-2xl bg-white border border-zinc-200 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500">
 
