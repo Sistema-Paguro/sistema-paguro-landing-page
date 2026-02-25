@@ -23,7 +23,7 @@ function App() {
   return (
     <main className="min-h-screen bg-white">
       {/* Floating Event Badge */}
-      <div className="fixed top-4 left-6 md:top-6 lg:left-16 z-[6000] pointer-events-none">
+      <div className="fixed top-4 left-4 md:top-6 md:left-8 z-[6000] pointer-events-none">
         <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-[#050510]/80 text-magenta-light text-xs md:text-sm font-bold border border-magenta-light/50 shadow-[0_0_15px_rgba(192,28,131,0.3)] backdrop-blur-md pointer-events-auto">
           <span className="flex h-2 w-2 rounded-full bg-magenta mr-2 shadow-[0_0_5px_#c01c83] animate-pulse"></span>
           {t("hero.badge")}
