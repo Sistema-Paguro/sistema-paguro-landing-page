@@ -62,11 +62,11 @@ export default function Hero() {
                         </span>
                     </ShimmerButton>
                 </div>
+            </div>
 
-                {/* Live Event Countdown */}
-                <div className="w-full pt-8 lg:pt-12 flex justify-end lg:justify-end">
-                    <ShiftingCountdown labels={t("hero.countdown") as any} />
-                </div>
+            {/* Live Event Countdown */}
+            <div className="relative z-10 w-full lg:w-auto mt-12 lg:mt-0 flex justify-center lg:justify-end">
+                <ShiftingCountdown labels={t("hero.countdown") as any} />
             </div>
 
         </section>
